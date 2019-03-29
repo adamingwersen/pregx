@@ -1,6 +1,8 @@
 module Main where
 
-import Lib
+import StateMachine
+import GenerateString (generateString)
 
+--example use of generateString
 main :: IO ()
-main = someFunc
+main = generateString "a0.3b0.1b0.1c" 100
